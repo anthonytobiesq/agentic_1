@@ -1,6 +1,7 @@
 from functions.get_files_info import get_files_info
 from functions.get_file_content import get_file_content
 from functions.write_file import write_file
+from functions.run_python import run_python_file
 
 '''if __name__ == "__main__":
     result = get_files_info("calculator", ".")
@@ -28,7 +29,7 @@ from functions.write_file import write_file
     result = get_file_content("calculator", "pkg/does_not_exist.py")
     print(f"contents of file:\n" + result)'''
 
-def test():
+'''def test():
     result = write_file("calculator", "lorem.txt", "wait, this isn't lorem ipsum")
     print(result)
     print(" ")
@@ -40,4 +41,27 @@ def test():
 
 
 if __name__ == "__main__":
-    test()
+    test()'''
+
+'''def test2():
+    result = run_python_file("calculator", "main.py")
+    print(result)
+    print(" ")
+    result = run_python_file("calculator", "main.py", ["3 + 5"])
+    print(result)
+    print(" ")
+    result = run_python_file("calculator", "../main.py")
+    print(result)
+    print(" ")
+    result = run_python_file("calculator", "nonexistent.py")
+    print(result)'''
+
+
+#TODO TEST SCHEMAS AND PROMPTS
+def test3():
+    pass
+
+
+
+if __name__ == "__main__":
+        test3()
